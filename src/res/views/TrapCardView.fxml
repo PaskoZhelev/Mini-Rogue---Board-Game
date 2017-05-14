@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.TrapCardController">
+   <children>
+      <ImageView fitHeight="495.0" fitWidth="755.0" pickOnBounds="true" preserveRatio="true">
+			<Image url="images/cardViewBackground.jpg" />
+      </ImageView>
+      <Rectangle fx:id="rectangleOne" arcHeight="5.0" arcWidth="5.0" fill="#e0e0e045" height="57.0" layoutX="516.0" layoutY="149.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="63.0" />
+     <ImageView fx:id="selectedCardSpace" fitHeight="495.0" fitWidth="355.0" pickOnBounds="true" preserveRatio="true">        
+        </ImageView>
+       <ImageView fx:id="diceOneSpace" fitHeight="70.0" fitWidth="77.0" layoutX="511.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+
+      </ImageView>
+      <ImageView fx:id="rollButton" fitHeight="43.0" fitWidth="157.0" layoutX="471.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         </ImageView>
+         <Label fx:id="resultLabel" layoutX="454.0" layoutY="274.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="rollingLabel" layoutX="471.0" layoutY="39.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="loseHPLabel" layoutX="420.0" layoutY="325.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="392.0" layoutY="206.0" text="Trap Result:" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="trapResultLabel" layoutX="480.0" layoutY="201.0" textFill="#ea991c">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="638.0" layoutY="188.0" text="Skill Check:" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="skillCheckLabel" layoutX="634.0" layoutY="213.0" textFill="#eb1c1c">
+         <font>
+            <Font name="Agency FB Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

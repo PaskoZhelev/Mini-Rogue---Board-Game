@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.MerchantCardController">
+   <children>
+      <ImageView fitHeight="495.0" fitWidth="755.0" pickOnBounds="true" preserveRatio="true">
+			<Image url="images/cardViewBackground.jpg" />
+      </ImageView>
+     <ImageView fx:id="selectedCardSpace" fitHeight="495.0" fitWidth="355.0" pickOnBounds="true" preserveRatio="true">
+         
+      </ImageView>
+      
+         <Label layoutX="495.0" layoutY="8.0" text="Merchant Shop" textFill="#ea991c">
+         <font>
+            <Font name="Agency FB Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="398.0" layoutY="46.0" text="Character's Gold:" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="charGold" layoutX="530.0" layoutY="42.0" textFill="#ea991c">
+         <font>
+            <Font name="Agency FB Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="433.0" layoutY="458.0" text="You can buy or sell any number of items!" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="474.0" layoutY="145.0" text="Buy" textFill="#ea991c">
+         <font>
+            <Font name="Agency FB Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="611.0" layoutY="145.0" text="Sell" textFill="#eb1c1c">
+         <font>
+            <Font name="Agency FB Bold" size="23.0" />
+         </font>
+      </Label>
+      <Line endX="120.0" layoutX="554.0" layoutY="178.0" startX="-120.0" stroke="#ea991c" />
+      <Line endX="120.0" layoutX="554.0" layoutY="269.0" rotate="90.0" startX="-120.0" stroke="#ea991c" />
+      <Label fx:id="buyFood" layoutX="427.0" layoutY="189.0" text="Ration (+1 Food)" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="buyHealth" layoutX="409.0" layoutY="228.0" text="Health Potion (+1 HP)" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="buyBigHealth" layoutX="386.0" layoutY="267.0" text="Big Health Potion (+4 HP)" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="buyArmor" layoutX="389.0" layoutY="302.0" text="Armor Piece (+1 Armor)" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="buySpell" layoutX="434.0" layoutY="334.0" text="Any 1 Spell" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="buyPoisonLabel" layoutX="485.0" layoutY="370.0" text="Poison" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="buyHealingLabel" layoutX="484.0" layoutY="401.0" text="Healing" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="buyIceLabel" layoutX="409.0" layoutY="367.0" text="Ice" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="buyFireballLabel" layoutX="394.0" layoutY="401.0" text="Fireball" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="sellArmor" layoutX="575.0" layoutY="189.0" text="1 Armor Piece" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="sellSpell" layoutX="587.0" layoutY="226.0" text="Any 1 Spell" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="spellTwoLabel" layoutX="655.0" layoutY="257.0" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="spellOneLabel" layoutX="567.0" layoutY="257.0" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="warningLabel" layoutX="469.0" layoutY="405.0" textFill="#eb1c1c">
+         <font>
+            <Font name="Agency FB Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="398.0" layoutY="91.0" text="Character's Armor:" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="charArmor" layoutX="541.0" layoutY="87.0" textFill="#4bcd49">
+         <font>
+            <Font name="Agency FB Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="569.0" layoutY="46.0" text="Character's HP:" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="charHealth" layoutX="689.0" layoutY="42.0" textFill="#eb1c1c">
+         <font>
+            <Font name="Agency FB Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="567.0" layoutY="91.0" text="Character's Food:" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="charFood" layoutX="689.0" layoutY="87.0" textFill="#3c67d3">
+         <font>
+            <Font name="Agency FB Bold" size="27.0" />
+         </font>
+      </Label>
+     
+   </children>
+</AnchorPane>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1200.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.MainController">
+   <children>
+      <ImageView fx:id="backgroundMiniRogue" fitHeight="660.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="startGameButton" fitHeight="58.0" fitWidth="204.0" layoutX="495.0" layoutY="418.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/startGameButton.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="exitButton" fitHeight="58.0" fitWidth="204.0" layoutX="495.0" layoutY="492.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/exitButton.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="appVersion" layoutX="1062.0" layoutY="616.0" opacity="0.0" text="V. 1.0.1" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="boardGameLabelOne" layoutX="43.0" layoutY="580.0" opacity="0.0" text="Board Game developed by " textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="boardGameLabelTwo" layoutX="27.0" layoutY="607.0" opacity="0.0" text="P. Di Stefano and G. Gendron" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="appLabel" layoutX="979.0" layoutY="586.0" opacity="0.0" text="Application developed by P. Zhelev" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="19.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="188.0" layoutX="761.0" layoutY="400.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.7" visible="false" width="147.0" />
+      <Label fx:id="selectDifficulty" layoutX="777.0" layoutY="404.0" text="Select Difficulty" textFill="WHITE" underline="true" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="casual" layoutX="804.0" layoutY="439.0" text="Casual" textFill="#4bcd49" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="normal" layoutX="803.0" layoutY="476.0" text="Normal" textFill="#3c67d3" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="hard" layoutX="812.0" layoutY="512.0" text="Hard" textFill="#ea991c" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="impossible" layoutX="787.0" layoutY="547.0" text="Impossible" textFill="#eb1c1c" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Hyperlink fx:id="hyperLink" focusTraversable="false" layoutX="62.0" layoutY="545.0" opacity="0.0" text="Mini Rogue BGG Page">
+         <font>
+            <Font name="Agency FB" size="18.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

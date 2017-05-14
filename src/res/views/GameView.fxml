@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="939.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.GameController">
+   <children>
+      <ImageView fitHeight="660.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/playerMat.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cardSpaceOne" fitHeight="228.0" fitWidth="163.0" layoutX="18.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="cardSpaceTwo" fitHeight="228.0" fitWidth="163.0" layoutX="204.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="cardSpaceThree" fitHeight="228.0" fitWidth="163.0" layoutX="204.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="cardSpaceFour" fitHeight="228.0" fitWidth="163.0" layoutX="389.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="135.0" layoutX="783.0" layoutY="15.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.5" width="112.0" />
+      <ImageView fx:id="cardSpaceFive" fitHeight="228.0" fitWidth="163.0" layoutX="573.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="cardSpaceSix" fitHeight="228.0" fitWidth="163.0" layoutX="573.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="cardSpaceSeven" fitHeight="228.0" fitWidth="163.0" layoutX="757.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="800.0" layoutY="18.0" text="Health: " textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="800.0" layoutY="51.0" text="Armor: " textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="801.0" layoutY="84.0" text="Gold: " textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="801.0" layoutY="117.0" text="Food: " textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="21.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="573.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Experience Points:" textAlignment="CENTER" wrappingWidth="137.96533203125">
+         <font>
+            <Font name="Agency FB" size="21.0" />
+         </font>
+      </Text>
+      <Label layoutX="756.0" layoutY="158.0" text="Spells" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="healthLabel" layoutX="858.0" layoutY="16.0" textFill="#eb1c1c">
+         <font>
+            <Font name="Agency FB Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="armorLabel" layoutX="858.0" layoutY="49.0" textFill="#4bcd49">
+         <font>
+            <Font name="Agency FB Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="goldLabel" layoutX="858.0" layoutY="82.0" textFill="#ea991c">
+         <font>
+            <Font name="Agency FB Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="foodLabel" layoutX="858.0" layoutY="115.0" textFill="#3c67d3">
+         <font>
+            <Font name="Agency FB Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="spellOneLabel" layoutX="776.0" layoutY="186.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="spellTwoLabel" layoutX="863.0" layoutY="187.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="717.0" layoutY="23.0" textFill="#3c67d3" fx:id="xpLabel">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="683.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Rank      )" textAlignment="CENTER" wrappingWidth="80.96533203125">
+         <font>
+            <Font name="Agency FB" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="rankLabel" layoutX="732.0" layoutY="54.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="219.0" fitWidth="162.0" layoutX="759.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/dungeonLevel.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="dungeon1" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" layoutX="767.0" layoutY="461.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="31.0" />
+      <Rectangle fx:id="dungeon2" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" layoutX="802.0" layoutY="461.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="31.0" />
+      <Rectangle fx:id="dungeon3" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" layoutX="768.0" layoutY="503.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="31.0" />
+      <Rectangle fx:id="dungeon4" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" layoutX="803.0" layoutY="503.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="31.0" />
+      <Rectangle fx:id="dungeon5" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" layoutX="767.0" layoutY="546.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="31.0" />
+      <Rectangle fx:id="dungeon6" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" layoutX="802.0" layoutY="546.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="31.0" />
+      <Rectangle fx:id="dungeon7" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" layoutX="838.0" layoutY="546.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="31.0" />
+      <Rectangle fx:id="dungeon8" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" layoutX="767.0" layoutY="589.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="31.0" />
+      <Rectangle fx:id="dungeon9" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" layoutX="802.0" layoutY="589.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="31.0" />
+      <Rectangle fx:id="dungeon10" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" layoutX="837.0" layoutY="590.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="31.0" />
+      <Rectangle fx:id="dungeon11" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" layoutX="768.0" layoutY="632.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="31.0" />
+      <Rectangle fx:id="dungeon12" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" layoutX="803.0" layoutY="632.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="31.0" />
+      <Rectangle fx:id="dungeon13" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" layoutX="837.0" layoutY="632.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="31.0" />
+      <Rectangle fx:id="dungeon14" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" layoutX="872.0" layoutY="632.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="31.0" />
+      <Text fill="WHITE" layoutX="-26.0" layoutY="642.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficulty:" textAlignment="CENTER" wrappingWidth="137.96533203125">
+         <font>
+            <Font name="Agency FB" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="difficultyLabel" layoutX="74.0" layoutY="626.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

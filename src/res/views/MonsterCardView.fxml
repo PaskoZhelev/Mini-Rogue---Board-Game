@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.MonsterCardController">
+   <children>
+      <ImageView fitHeight="495.0" fitWidth="755.0" pickOnBounds="true" preserveRatio="true">
+			<Image url="images/cardViewBackground.jpg" />
+      </ImageView>
+      <Rectangle fx:id="rectangleOne" arcHeight="5.0" arcWidth="5.0" fill="#e0e0e045" height="57.0" layoutX="403.0" layoutY="111.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" width="63.0" />
+      <Rectangle fx:id="rectangleTwo" arcHeight="5.0" arcWidth="5.0" fill="#e0e0e045" height="57.0" layoutX="485.0" layoutY="111.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" width="63.0" />
+      <Rectangle fx:id="rectangleThree" arcHeight="5.0" arcWidth="5.0" fill="#e0e0e045" height="57.0" layoutX="565.0" layoutY="111.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" width="63.0" />
+      <Rectangle fx:id="rectangleFour" arcHeight="5.0" arcWidth="5.0" fill="#e0e0e045" height="57.0" layoutX="651.0" layoutY="111.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" width="63.0" />
+      <ImageView fx:id="selectedCardSpace" fitHeight="495.0" fitWidth="355.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/cards/Monster.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="diceOneSpace" fitHeight="70.0" fitWidth="77.0" layoutX="398.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true" visible="false">
+
+      </ImageView>
+      <ImageView fx:id="diceTwoSpace" fitHeight="70.0" fitWidth="77.0" layoutX="479.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true" visible="false">
+
+      </ImageView>
+      <ImageView fx:id="diceThreeSpace" fitHeight="70.0" fitWidth="77.0" layoutX="559.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true" visible="false">
+
+      </ImageView>
+      <ImageView fx:id="diceFourSpace" fitHeight="70.0" fitWidth="77.0" layoutX="645.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" visible="false">
+
+      </ImageView>
+      <ImageView fx:id="rollButton" fitHeight="43.0" fitWidth="157.0" layoutX="478.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="34.0" layoutX="404.0" layoutY="216.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.5" width="317.0" />
+      <Label fx:id="charHPLabel" layoutX="416.0" layoutY="221.0" text="Character's HP:" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="charHPDigit" layoutX="531.0" layoutY="216.0" textFill="#ea991c">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="monsterHPLabel" layoutX="417.0" layoutY="273.0" text="Monster's HP:" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="monsterHPDigit" layoutX="531.0" layoutY="268.0" textFill="#eb1a1a">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="charDMGLabel" layoutX="577.0" layoutY="219.0" text="Character's DMG:" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="charDMGDigit" layoutX="696.0" layoutY="215.0" textFill="#ea991c">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="monsterDMGLabel" layoutX="578.0" layoutY="269.0" text="Monster's DMG:" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="monsterDMGDigit" layoutX="696.0" layoutY="264.0" textFill="#eb1a1a">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="charSpellsLabel" layoutX="417.0" layoutY="185.0" text="Character's Spells:" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="spellOneLabel" layoutX="570.0" layoutY="187.0" onMouseClicked="#activateSpellOne" textFill="#ea991c" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="spellTwoLabel" layoutX="645.0" layoutY="187.0" onMouseClicked="#activateSpellTwo" textFill="#ea991c" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="miss" layoutX="504.0" layoutY="82.0" textFill="#ea991c" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="critical" layoutX="576.0" layoutY="82.0" textFill="#eb1c1c" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="yesLabel" layoutX="664.0" layoutY="60.0" text="Yes" textFill="#ea991c" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="noLabel" layoutX="715.0" layoutY="60.0" text="No" textFill="#e82e1c" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="minusHPLabel" layoutX="651.0" layoutY="64.0" text="-2 HP" textFill="#ea991c" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="minusXPLabel" layoutX="706.0" layoutY="64.0" text="-1 XP" textFill="#e82e1c" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="typeOfMonsterLabel" layoutX="477.0" layoutY="8.0" text="You are fighting: " textFill="WHITE" visible="false">
+         <font>	
+            <Font name="Agency FB" size="16.0" />
+         </font>
+      </Label>
+      <Text fx:id="rewardText" fill="#e8961c" layoutX="502.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="119.99999988824129">
+         <font>
+            <Font name="Agency FB Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="rerollLabel" fill="#e8961c" layoutX="651.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" visible="false" wrappingWidth="98.99999691545963">
+         <font>
+            <Font name="Agency FB Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="battleResultLabel" fill="WHITE" layoutX="440.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" visible="false" wrappingWidth="247.9999998882413">
+         <font>
+            <Font name="Agency FB Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="rerollCriticalLabel" fill="#e8961c" layoutX="365.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reroll Critical?" textAlignment="CENTER" visible="false" wrappingWidth="98.99999691545963">
+         <font>
+            <Font name="Agency FB Bold" size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="yesCriticalLabel" layoutX="377.0" layoutY="48.0" text="Yes" textFill="#ea991c" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="noCriticalLabel" layoutX="428.0" layoutY="48.0" text="No" textFill="#e82e1c" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

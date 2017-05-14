@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.GameOverController">
+   <children>
+      <ImageView fitHeight="495.0" fitWidth="755.0" pickOnBounds="true" preserveRatio="true">
+			<Image url="images/cardViewBackground.jpg" />
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00000097" height="495.0" stroke="TRANSPARENT" strokeType="INSIDE" width="755.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff40" height="84.0" layoutX="171.0" layoutY="98.0" opacity="0.48" stroke="TRANSPARENT" strokeType="INSIDE" width="412.0" />
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="88.0" layoutY="249.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oh, sorry, you died, right? Mini Rogue can sometimes be a punishingly hard game. Nevertheless, you’ve faced great odds, found great loot, and kicked ass!" textAlignment="CENTER" wrappingWidth="578.6777954101562">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="139.0" layoutY="163.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GAME OVER" textAlignment="CENTER" wrappingWidth="488.67779541015625">
+         <font>
+            <Font name="Agency FB Bold" size="64.0" />
+         </font>
+      </Text>
+      </children>
+</AnchorPane>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.EventCardController">
+   <children>
+      <ImageView fitHeight="495.0" fitWidth="755.0" pickOnBounds="true" preserveRatio="true">
+			<Image url="images/cardViewBackground.jpg" />
+      </ImageView>
+      <Rectangle fx:id="rectangleOne" arcHeight="5.0" arcWidth="5.0" fill="#e0e0e045" height="57.0" layoutX="523.0" layoutY="101.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="63.0" />
+     <ImageView fx:id="selectedCardSpace" fitHeight="495.0" fitWidth="355.0" pickOnBounds="true" preserveRatio="true">        
+        </ImageView>
+       <ImageView fx:id="diceOneSpace" fitHeight="70.0" fitWidth="77.0" layoutX="518.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+
+      </ImageView>
+      <ImageView fx:id="rollButton" fitHeight="43.0" fitWidth="157.0" layoutX="478.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         </ImageView>
+         <Label fx:id="resultLabel" layoutX="402.0" layoutY="190.0" text="Result:" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="skillCheckLabel" layoutX="546.0" layoutY="190.0" text="Skill Check:" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="resultDigit" layoutX="472.0" layoutY="185.0" textFill="#eb1c1c">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="skillCheckOutcome" layoutX="632.0" layoutY="187.0" textFill="#eb1c1c">
+         <font>
+            <Font name="Agency FB Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="outcomeLabel" layoutX="448.0" layoutY="253.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="plusOneLabel" layoutX="429.0" layoutY="294.0" text="+1" textFill="#ea991c" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="minusOneLabel" layoutX="646.0" layoutY="293.0" text="-1" textFill="#ea991c" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="currentResultLabel" layoutX="491.0" layoutY="296.0" text="Current Result" textFill="#eb1c1c" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="resolveResultLabelOne" layoutX="367.0" layoutY="313.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="resolveResultLabelTwo" layoutX="505.0" layoutY="355.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
