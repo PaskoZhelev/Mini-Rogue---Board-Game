@@ -1,4 +1,4 @@
-# Mini-Rogue---Board-Game
+# Mini Rogue - Board Game (PC Version)
 A PC version of the board game Mini Rogue developed using Java 8 and JavaFX.
 
 This version is compatible with Windows only.
