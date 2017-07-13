@@ -1,9 +1,9 @@
 # Mini Rogue - Board Game (PC Version)
 A PC version of the board game Mini Rogue developed using Java 8 and JavaFX.
 
-This version is compatible with Windows only.
+This version is compatible with Windows, Mac and Linux.
 
-You can download the playable version for Windows from the link below:
+You can download the playable version from the link below:
 
 Full Fonts version: https://goo.gl/Nw2P8c
 
